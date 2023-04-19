@@ -33,3 +33,17 @@ int __stdcall resta(int a, int b) {
 	}
 	return resultado2;
 }
+
+
+	int __stdcall multiplicacion(int a, int b) {
+		//data
+		int resultado;
+
+		_asm { //ensamblador inline
+			mov eax, a
+			mul b
+
+			mov resultado, eax
+		}
+		return resultado;
+}

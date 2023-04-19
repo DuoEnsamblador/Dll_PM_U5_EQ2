@@ -9,3 +9,5 @@
 extern "C" __declspec(dllexport) int __stdcall suma(int a, int b);
 
 extern "C" __declspec(dllexport) int __stdcall resta(int a, int b);
+
+extern "C" __declspec(dllexport) int __stdcall multiplicacion(int a, int b);
