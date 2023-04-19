@@ -8,6 +8,7 @@ int __stdcall suma(int a, int b) {
 	//data
 	int resultado;
 
+
 	_asm { //ensamblador inline
 		mov eax , a 
 		add eax , b
@@ -15,4 +16,20 @@ int __stdcall suma(int a, int b) {
 		mov resultado , eax
 	}
 	return resultado;
+}
+
+int __stdcall resta(int a, int b) {
+
+	//data
+	int resultado2;
+
+	_asm { //ensamblador inline
+		mov eax , 0
+		mov eax , a
+		mov ebx , b
+		sub eax , ebx
+
+		mov resultado2, eax
+	}
+	return resultado2;
 }
