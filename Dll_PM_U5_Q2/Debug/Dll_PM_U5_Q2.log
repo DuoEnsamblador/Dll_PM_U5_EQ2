@@ -1,5 +1,4 @@
 ﻿  pch.cpp
-C:\Users\EMMANUEL\source\repos\Dll_PM_U5_Q2\Dll_PM_U5_Q2\pch.cpp(25,6): warning C4101: 'vardos': variable local sin referencia
   dllmain.cpp
-     Creando biblioteca C:\Users\EMMANUEL\source\repos\Dll_PM_U5_Q2\Debug\Dll_PM_U5_Q2.lib y objeto C:\Users\EMMANUEL\source\repos\Dll_PM_U5_Q2\Debug\Dll_PM_U5_Q2.exp
-  Dll_PM_U5_Q2.vcxproj -> C:\Users\EMMANUEL\source\repos\Dll_PM_U5_Q2\Debug\Dll_PM_U5_Q2.dll
+     Creando biblioteca D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.lib y objeto D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.exp
+  Dll_PM_U5_Q2.vcxproj -> D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.dll
