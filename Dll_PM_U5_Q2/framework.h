@@ -12,6 +12,8 @@ extern "C" __declspec(dllexport) int __stdcall resta(int a, int b);
 
 extern "C" __declspec(dllexport) int __stdcall multiplicacion(int a, int b);
 
+extern "C" __declspec(dllexport) int __stdcall division(int a, int b);
+
 extern "C" __declspec(dllexport) int __stdcall largo_cadena(const char* str);
 
 extern "C" __declspec(dllexport) int __stdcall escribir_cadena(char* str , int len_buffer);

@@ -47,6 +47,21 @@ int __stdcall suma(int a, int b) {
 		return resultado2;
 	}
 
+	int __stdcall division(int a, int b) {
+
+		//data
+		int resultado2;
+
+		_asm { //ensamblador inline
+	
+			mov eax, a
+			mov ecx, b
+			div ecx
+			mov resultado2, eax
+		}
+		return resultado2;
+	}
+
 	int __stdcall largo_cadena(const char* str) {
 		int len = strlen(str);
 		return len;
