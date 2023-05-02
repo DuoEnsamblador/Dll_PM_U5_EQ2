@@ -1,5 +1,6 @@
 ﻿  pch.cpp
-C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Dll_PM_U5_Q2\pch.cpp(86,9): warning C4068: pragma "enregion" desconocida
+D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Dll_PM_U5_Q2\pch.cpp(86,9): warning C4068: pragma "enregion" desconocida
+D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Dll_PM_U5_Q2\pch.cpp(189,10): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
   dllmain.cpp
-     Creando biblioteca C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.lib y objeto C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.exp
-  Dll_PM_U5_Q2.vcxproj -> C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.dll
+     Creando biblioteca D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.lib y objeto D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.exp
+  Dll_PM_U5_Q2.vcxproj -> D:\GitHub\prueba_dll_operaciones\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.dll

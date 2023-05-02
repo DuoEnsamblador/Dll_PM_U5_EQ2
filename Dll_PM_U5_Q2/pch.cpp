@@ -166,30 +166,26 @@ int __stdcall suma(int a, int b) {
 
 	int __stdcall Calculartiempo(char* cadRes, int velocidad, int distancia) {
 		//a nombre no se le hara ningun cambio en este programa...
-		int tiempo;
-		
+		int ms;
+		int dana = 1000;
+		int rayo = 3600;
+		double resultF;
 		//ensamblador
+		//eax = 90
+		// eax(f) = eax(90)*1000
+		//90,000
+		 // 75000 / 3600 = 20
 		_asm {
+
 			mov eax, velocidad
-			mul distancia
+			mul dana
 
 			mov edx, 0
-			mov ebx, 3600
-			
-			div ebx
+			div rayo
 
-			mov ecx,distancia
-			mul ecx
-			
-	     mov tiempo,eax
-			
+			mov ms , eax
 		}
-		int c = 0;
-		const char* aux = "El tiempo requerido es de: ";
-		int len = strlen(aux);
-		for (int i = 0; i < len; i++) {
-			cadRes[c] = aux[i];
-			c++;
-		}
+		resultF = distancia / ms;
+		return resultF;
 
 		}
