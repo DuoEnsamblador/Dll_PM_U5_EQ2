@@ -1,5 +1,5 @@
 ﻿  pch.cpp
-C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Dll_PM_U5_Q2\pch.cpp(85,9): warning C4068: pragma "enregion" desconocida
+C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Dll_PM_U5_Q2\pch.cpp(86,9): warning C4068: pragma "enregion" desconocida
   dllmain.cpp
      Creando biblioteca C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.lib y objeto C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.exp
   Dll_PM_U5_Q2.vcxproj -> C:\Users\Usuario\Downloads\microooo\unidad 5\Dll_PM_U5_EQ2\Debug\Dll_PM_U5_Q2.dll

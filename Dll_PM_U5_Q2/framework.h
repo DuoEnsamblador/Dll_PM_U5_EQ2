@@ -22,4 +22,6 @@ extern "C" __declspec(dllexport) int __stdcall escribir_cadena(char* str , int l
 
 extern "C" __declspec(dllexport) int __stdcall promedioDeUsuario(char* nombre , int cal1 , int cal2, int cal3);
 
+extern "C" __declspec(dllexport) int __stdcall promUsuario(char* cadRes, char* nombre, int cal1, int cal2, int cal3);
 
+extern "C" __declspec(dllexport) int __stdcall Calculartiempo(char* cadRes,  int velocidad, int distancia);

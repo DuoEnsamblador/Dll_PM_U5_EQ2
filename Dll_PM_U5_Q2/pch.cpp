@@ -1,6 +1,7 @@
 // pch.cpp: el archivo de código fuente correspondiente al encabezado precompilado
 
 #include "pch.h"
+#include <stdio.h>
 
 // Cuando se utilizan encabezados precompilados, se requiere este archivo de código fuente para que la compilación se realice correctamente.
 
@@ -109,7 +110,86 @@ int __stdcall suma(int a, int b) {
 		}
 
 		prom += pDecimal / 3;
+
 		return prom;
 	}
 
 #pragma endregion
+
+	int __stdcall promUsuario(char* cadRes, char* nombre, int cal1, int cal2, int cal3) {
+		//a nombre no se le hara ningun cambio en este programa...
+		int prom;
+		int pDecimal;
+		//ensamblador
+		_asm {
+			mov eax, 0
+			add eax, cal1
+			add eax, cal2
+			add eax, cal3
+
+			mov edx, 0
+			mov ecx, 3
+			div ecx
+
+			mov pDecimal, edx
+			mov prom, eax
+		}
+
+		prom += pDecimal / 3;
+
+		int c = 0;
+		const char* aux = "tienes un promedio de: ";
+		int len = strlen(nombre);
+		for (int i = 0; i < len; i++)
+		{
+			cadRes[c] = nombre[i];
+			c++;
+		}
+		len = strlen(aux);
+		for (int i = 0; i < len; i++)
+		{
+			cadRes[c] = aux[i];
+			c++;
+		}
+		if (prom == 10) {
+			cadRes[c] = 49;
+			c++;
+			cadRes[c] = 48;
+
+		}
+		else {
+			cadRes[c] = prom + 48;
+		}
+		c++;
+		return c;
+	}
+
+	int __stdcall Calculartiempo(char* cadRes, int velocidad, int distancia) {
+		//a nombre no se le hara ningun cambio en este programa...
+		int tiempo;
+		
+		//ensamblador
+		_asm {
+			mov eax, velocidad
+			mul distancia
+
+			mov edx, 0
+			mov ebx, 3600
+			
+			div ebx
+
+			mov ecx,distancia
+			mul ecx
+			
+	     mov tiempo,eax
+			
+		}
+		int c = 0;
+		const char* aux = "El tiempo requerido es de: ";
+		int len = strlen(aux);
+		for (int i = 0; i < len; i++) {
+			cadRes[c] = aux[i];
+			c++;
+		}
+
+		}
