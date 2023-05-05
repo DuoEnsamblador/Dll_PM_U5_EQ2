@@ -25,3 +25,8 @@ extern "C" __declspec(dllexport) int __stdcall promedioDeUsuario(char* nombre , 
 extern "C" __declspec(dllexport) int __stdcall promUsuario(char* cadRes, char* nombre, int cal1, int cal2, int cal3);
 
 extern "C" __declspec(dllexport) int __stdcall Calculartiempo(char* cadRes,  int velocidad, int distancia);
+
+//CALCULAR LA VELOCIDAD
+extern "C" __declspec(dllexport) int __stdcall velocidad(char* cadRes,char* nombre, int velocidad, int distancia);
+extern "C" __declspec(dllexport) int __stdcall addCadena2Cadena(char* cadRes, int indice, const char* cadena);
+extern "C" __declspec(dllexport) int __stdcall addNum2Cadena(char* cadRes, int indice, int numero);
