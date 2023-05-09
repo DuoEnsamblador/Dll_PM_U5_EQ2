@@ -244,13 +244,16 @@ int __stdcall suma(int a, int b) {
 			for (int i = 0; i < cont - 1; i++) { //busca encontrar al divisor
 				div = div * 10;
 			}
-			while (numero > 0) { //obtener el digito mas a la izquierda ... 
+			
+			while (numero > 10) { //obtener el digito mas a la izquierda ... 
 				int t = numero / div;
 				cadRes[indice] = t + 48;
 				indice++;
 				numero = numero % div;
 				div = div / 10;
-			}
+			}    
+			cadRes[indice] = numero + 48;
+			indice++;
 		}
 		else { //con  = 0
 			cadRes[indice] = numero + 48;
